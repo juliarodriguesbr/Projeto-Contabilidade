@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(233, 238, 243);
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainImage {
+  width: 320px;
+  height: 320px;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#submitButton {
+  border: none;
+  margin-top: 15px;
+  border-radius: 8px;
+  color: white;
+  background-color: black;
+  padding: 5px;
+}
+
+#submitButton:hover {
+  cursor: pointer;
+  height: 30px;
+  width: 125px;
+}
+
+@media (max-width: 785px) {
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  #submitButton:hover {
+    width: 100%;
+  }
+}
